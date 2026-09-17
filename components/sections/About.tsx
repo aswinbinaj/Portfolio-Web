@@ -33,7 +33,7 @@ export default function About() {
         
         <div className="relative">
           {/* Decorative elements behind the skills grid */}
-          <div className="absolute inset-0 bg-accent-gold/5 blur-[100px] rounded-full pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(209,180,118,0.06)_0%,transparent_70%)] rounded-full pointer-events-none" />
           
           <div className="glass-card p-8 rounded-3xl relative z-10 border border-white/5">
             <h3 className="text-xl font-heading font-semibold mb-6">Core Skills</h3>

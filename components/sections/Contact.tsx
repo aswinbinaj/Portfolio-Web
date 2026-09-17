@@ -7,9 +7,9 @@ export default function Contact() {
   return (
     <AnimatedSection id="contact" className="container mx-auto px-6 max-w-7xl pt-16 pb-16 md:pt-32 md:pb-24">
       <div className="glass-card rounded-2xl sm:rounded-[3rem] p-5 sm:p-8 md:p-16 relative overflow-hidden">
-        {/* Glow Effects */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-accent-violet/10 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-gold/10 rounded-full blur-[100px] pointer-events-none" />
+        {/* Glow Effects (Zero-Cost Radial Gradients) */}
+        <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(140,112,212,0.12)_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(209,180,118,0.08)_0%,transparent_70%)] pointer-events-none" />
         
         <div className="grid lg:grid-cols-2 gap-16 relative z-10">
           <div>

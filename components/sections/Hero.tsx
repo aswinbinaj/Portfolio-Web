@@ -10,14 +10,9 @@ export default function Hero() {
       className="relative min-h-[100dvh] flex items-center justify-center pt-24 pb-16 sm:py-20 overflow-hidden"
       id="home"
     >
-      {/* Background Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-violet/20 rounded-full blur-[120px] pointer-events-none" />
-      
-      {/* Mobile Glow Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-accent-violet/20 rounded-full blur-[100px] md:hidden pointer-events-none" />
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-72 h-72 bg-accent-gold/10 rounded-full blur-[90px] md:hidden pointer-events-none" />
-
-      <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-accent-gold/10 rounded-full blur-[150px] pointer-events-none" />
+      {/* Ambient Glows (Zero-Cost Radial Gradients - No GPU Blur Filter) */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 md:left-1/4 md:translate-x-0 w-80 md:w-96 h-80 md:h-96 rounded-full bg-[radial-gradient(circle,rgba(140,112,212,0.18)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute bottom-12 right-1/2 translate-x-1/2 md:right-1/4 md:translate-x-0 w-80 md:w-[30rem] h-80 md:h-[30rem] rounded-full bg-[radial-gradient(circle,rgba(209,180,118,0.12)_0%,transparent_70%)] pointer-events-none" />
 
       <div
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:24px_24px] pointer-events-none opacity-50"

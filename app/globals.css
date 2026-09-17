@@ -52,10 +52,10 @@ body {
 /* Utilities */
 @layer utilities {
   .glass {
-    @apply bg-black/20 backdrop-blur-xl border border-white/[0.04];
+    @apply bg-black/40 border border-white/[0.04] md:bg-black/20 md:backdrop-blur-xl;
   }
   .glass-card {
-    @apply bg-white/[0.02] backdrop-blur-2xl border border-white/[0.05] transition-all duration-500 relative overflow-hidden;
+    @apply bg-[#0e0e0d]/90 border border-white/[0.05] transition-all duration-300 relative overflow-hidden md:bg-white/[0.02] md:backdrop-blur-2xl;
   }
   .glass-card::before {
     content: "";
@@ -66,12 +66,14 @@ body {
     transition: all 0.7s ease;
     pointer-events: none;
   }
-  .glass-card:hover {
-    @apply border-white/[0.15] bg-white/[0.05];
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), 0 0 30px rgba(209, 180, 118, 0.05);
-  }
-  .glass-card:hover::before {
-    left: 150%;
+  @media (hover: hover) {
+    .glass-card:hover {
+      @apply border-white/[0.15] bg-white/[0.05];
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), 0 0 30px rgba(209, 180, 118, 0.05);
+    }
+    .glass-card:hover::before {
+      left: 150%;
+    }
   }
   .text-gradient-gold {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#fdf0d5] via-[#d1b476] to-[#9b7c41];

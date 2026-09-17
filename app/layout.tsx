@@ -8,11 +8,15 @@ const poppins = Poppins({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
+  display: "swap",
+  preload: true,
 });
 
 const outfit = Outfit({
   variable: "--font-heading",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
