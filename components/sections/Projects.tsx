@@ -84,13 +84,9 @@ export default function Projects() {
 
       {/* PROJECT GRID */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {PROJECTS.map((project, index) => (
-          <motion.div
+        {PROJECTS.map((project) => (
+          <div
             key={project.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.5 }}
             className="group rounded-[28px] overflow-hidden border border-white/[0.05] bg-[#050505] flex flex-col"
           >
             {/* IMAGE */}
@@ -153,7 +149,7 @@ export default function Projects() {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 

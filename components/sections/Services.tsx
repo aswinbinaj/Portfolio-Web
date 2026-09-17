@@ -36,19 +36,15 @@ export default function Services() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {SERVICES.map((service, index) => (
-          <motion.div
+        {SERVICES.map((service) => (
+          <div
             key={service.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.6 }}
             className="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-all duration-300 group"
           >
             {service.icon}
             <h3 className="text-xl font-bold mb-3 group-hover:text-accent-gold transition-colors">{service.title}</h3>
             <p className="text-[13px] md:text-sm text-foreground/60 leading-relaxed font-light">{service.description}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
     </AnimatedSection>

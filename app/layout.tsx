@@ -60,12 +60,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${outfit.variable} dark scroll-smooth`}
+      className={`${poppins.variable} ${outfit.variable} dark md:scroll-smooth`}
       style={{ colorScheme: 'dark' }}
     >
       <body className="min-h-screen bg-background text-foreground antialiased selection:bg-accent-gold/40 selection:text-black flex flex-col font-sans relative">
         {/* Grain overlay */}
-        <div className="fixed inset-0 pointer-events-none noise-bg z-[9999] opacity-[0.04]" />
+        <div className="hidden md:block fixed inset-0 pointer-events-none noise-bg z-[9999] opacity-[0.04]" />
         
         <CustomCursor />
         <Navbar />

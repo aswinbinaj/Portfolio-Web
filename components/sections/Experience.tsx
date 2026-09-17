@@ -79,12 +79,8 @@ export default function Experience() {
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2" />
         
         {EXPERIENCES.map((exp, index) => (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1, duration: 0.6 }}
             className={`relative mb-16 md:w-1/2 ${
               index % 2 === 0 ? "md:pr-12 md:ml-0" : "md:pl-12 md:ml-auto"
             }`}
@@ -117,7 +113,7 @@ export default function Experience() {
                  ))}
                </ul>
              </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </AnimatedSection>

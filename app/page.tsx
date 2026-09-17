@@ -1,13 +1,11 @@
-import dynamic from "next/dynamic";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Experience from "@/components/sections/Experience";
+import Services from "@/components/sections/Services";
+import BlogPreview from "@/components/sections/BlogPreview";
+import Contact from "@/components/sections/Contact";
 import Footer from "@/components/ui/Footer";
-
-const Projects = dynamic(() => import("@/components/sections/Projects"), { ssr: true });
-const Experience = dynamic(() => import("@/components/sections/Experience"), { ssr: true });
-const Services = dynamic(() => import("@/components/sections/Services"), { ssr: true });
-const BlogPreview = dynamic(() => import("@/components/sections/BlogPreview"), { ssr: true });
-const Contact = dynamic(() => import("@/components/sections/Contact"), { ssr: true });
 
 /*metaData*/
 export const metadata = {

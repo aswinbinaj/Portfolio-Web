@@ -38,17 +38,13 @@ export default function About() {
           <div className="glass-card p-8 rounded-3xl relative z-10 border border-white/5">
             <h3 className="text-xl font-heading font-semibold mb-6">Core Skills</h3>
             <div className="flex flex-wrap gap-3">
-              {SKILLS.map((skill, index) => (
-                <motion.span
+              {SKILLS.map((skill) => (
+                <span
                   key={skill}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05, duration: 0.4 }}
                   className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm hover:border-accent-gold hover:text-accent-gold transition-colors cursor-default"
                 >
                   {skill}
-                </motion.span>
+                </span>
               ))}
             </div>
           </div>
